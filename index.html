@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
+
+    <meta name="description" content="MonteRanco - Estudio de Grabación - Futrono">
+    <meta name="keywords" content="MonteRanco, Sesiones en Vivo, Futrono, Chile">
+    <meta name="author" content="Paul Pineda - skeleton.cl">
+
+    <title>VISIS | Sesión 01 | Temporada 2 | MonteRanco</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        :root {
+            --bg: #000;
+            --card: #0d0d0d;
+            --text: #fff;
+            --border: #222;
+            --hover: #d9d9d9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+body {
+
+    background-color:#000;
+
+    color:#fff;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow-x:hidden;
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.72),
+            rgba(0,0,0,.78)
+        ),
+        url("img/fondo-monteranco.jpg");
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+    z-index:-2;
+}
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+        translateY(60px)
+        scale(.98);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+        .container {
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+            padding: 40px 20px 80px;
+
+        }
+
+        .services{
+        line-height: 1.9;
+        font-size: 20px;
+        margin-bottom: 56px;
+        color: #b1b1b1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        }
+
+
+
+        /* -------------------------------- */
+        /* LOGOS */
+        /* -------------------------------- */
+
+        .logo-principal {
+            display: block;
+            width: 220px;
+            max-width: 75%;
+            margin:198px auto;
+        }
+
+        .logo-banda {
+            width: 260px;
+            max-width: 85%;
+        }
+
+        .logo-estudio {
+            width: 200px;
+            max-width: 70%;
+            margin-bottom: 30px;
+        }
+
+        .logo-gobierno {
+            display: block;
+            width: 320px;
+            max-width: 85%;
+            margin: 50px auto;
+            opacity: .95;
+        }
+
+        /* -------------------------------- */
+        /* HERO */
+        /* -------------------------------- */
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .temporada {
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: .85rem;
+            margin-bottom: 10px;
+        }
+
+        .sesion {
+            font-size: clamp(2rem, 7vw, 4.5rem);
+            font-weight: 900;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        .banda {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            color: #d0d0d0;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .subtitulo {
+            color: #777;
+            font-size: .95rem;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* -------------------------------- */
+        /* VIDEO */
+        /* -------------------------------- */
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow:
+                0 0 40px rgba(255, 255, 255, .05),
+                0 0 80px rgba(255, 255, 255, .03);
+                margin: 133px auto;
+                    border: 1px solid #ccc;
+        }
+
+
+
+
+        .video-container::before {
+            content: "";
+            display: block;
+            padding-top: 56.25%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* -------------------------------- */
+        /* SECTION */
+        /* -------------------------------- */
+
+        .section {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .social-title {
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: .9rem;
+            margin-bottom: 25px;
+        }
+
+        /* -------------------------------- */
+        /* REDES */
+        /* -------------------------------- */
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .social a {
+            width: 58px;
+            height: 58px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #fff;
+            color: #000;
+
+            border-radius: 999px;
+            text-decoration: none;
+
+            font-size: 24px;
+
+            transition: .25s ease;
+        }
+
+        .social a:hover {
+            background: #d9d9d9;
+            color: #000;
+            transform: translateY(-4px);
+        }
+
+        /* -------------------------------- */
+        /* DIVISOR */
+        /* -------------------------------- */
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #1c1c1c;
+            margin: 70px auto;
+            max-width: 800px;
+        }
+
+        /* -------------------------------- */
+        /* FOOTER */
+        /* -------------------------------- */
+
+        footer {
+    margin-top: 80px;
+    padding-top: 35px;
+    border-top: 1px solid #1c1c1c;
+    text-align: center;
+    color: #666;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+        }
+
+        footer a {
+        color: #999;
+        text-decoration: none;
+        transition: .25s;
+        margin-left: 7px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* -------------------------------- */
+        /* MOBILE */
+        /* -------------------------------- */
+
+        @media (max-width:768px) {
+
+            .container {
+                padding: 25px 15px 60px;
+            }
+
+            .logo-principal {
+                width: 180px;
+            }
+
+            .logo-banda {
+                width: 220px;
+            }
+
+            .logo-estudio {
+                width: 160px;
+            }
+
+            .logo-gobierno {
+                width: 280px;
+            }
+
+            .social a {
+                width: 52px;
+                height: 52px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width:420px) {
+            .logo-principal {
+                width: 180px;
+                    margin: 198px auto;
+            }
+            .sesion {
+                letter-spacing: 2px;
+            }
+
+            .banda {
+                letter-spacing: 5px;
+            }
+
+            .logo-gobierno {
+                width: 240px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container ">
+
+        <!-- MONTERANCO -->
+
+        <img src="img/logo-monteranco-sesiones.svg"
+            alt="MonteRanco"
+            class="logo-principal reveal">
+
+
+
+                <style>
+                    /* -------------------------------- */
+                /* COUNTDOWN */
+                /* -------------------------------- */
+
+                .countdown-wrapper{
+                    text-align:center;
+                    margin:0 auto 60px;
+                }
+
+                .countdown-label{
+                    color:#888;
+                    letter-spacing:4px;
+                    font-size:.8rem;
+                    text-transform:uppercase;
+                    margin-bottom:18px;
+                }
+
+                .countdown{
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    gap:16px;
+                    flex-wrap:wrap;
+                }
+
+                .time-box{
+                    min-width:110px;
+
+                    background:linear-gradient(
+                        180deg,
+                        rgba(255,255,255,.05),
+                        rgba(255,255,255,.02)
+                    );
+
+                    border:1px solid #222;
+
+                    border-radius:18px;
+
+                    padding:22px 16px;
+
+                    backdrop-filter:blur(10px);
+
+                    box-shadow:
+                        0 0 30px rgba(255,255,255,.03),
+                        inset 0 0 10px rgba(255,255,255,.02);
+
+                    transition:.3s ease;
+                }
+
+                .time-box:hover{
+                    transform:translateY(-4px);
+                    border-color:#444;
+                }
+
+                .time-box span{
+                    display:block;
+
+                    font-size:clamp(2rem,5vw,3rem);
+
+                    font-weight:900;
+
+                    color:#fff;
+
+                    line-height:1;
+                }
+
+                .time-box small{
+                    display:block;
+
+                    margin-top:10px;
+
+                    color:#777;
+
+                    text-transform:uppercase;
+
+                    letter-spacing:2px;
+
+                    font-size:.75rem;
+                }
+
+                .countdown-date{
+                    margin-top:22px;
+
+                    color:#999;
+
+                    font-size:.9rem;
+
+                    letter-spacing:2px;
+                }
+
+                /* MOBILE */
+
+                @media(max-width:768px){
+
+                    .countdown{
+                        gap:10px;
+                    }
+
+                    .time-box{
+                        min-width:85px;
+                        padding:18px 10px;
+                    }
+
+                    .time-box span{
+                        font-size:2rem;
+                    }
+
+                    .countdown-date{
+                        font-size:.8rem;
+                        line-height:1.6;
+                    }
+                }
+
+                @media(max-width:480px){
+
+                    .countdown{
+                        display:grid;
+                        grid-template-columns:repeat(4,1fr);
+                        max-width:260px;
+                        margin:auto;
+                    }
+
+                    .time-box{
+                        min-width:auto;
+                    }
+                }
+                </style>
+                <!-- CONTADOR ESTRENO -->
+
+                <div class="countdown-wrapper reveal">
+
+                    <div class="countdown-label">
+                        ESTRENO EN
+                    </div>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <span id="days">00</span>
+                            <small>Días</small>
+                        </div>
+
+                        <div class="time-box">
+                            <span id="hours">00</span>
+                            <small>Hrs</small>
+                        </div>
+
+                        <div class="time-box">
+                            <span id="minutes">00</span>
+                            <small>Min</small>
+                        </div>
+
+                        <div class="time-box">
+                            <span id="seconds">00</span>
+                            <small>Seg</small>
+                        </div>
+
+                    </div>
+
+                    <div class="countdown-date">
+                        15 JUNIO 2026 · 21:00 HRS 
+                    </div>
+
+                </div>
+
+                <script>
+
+                const countdownDate = new Date("June 15, 2026 21:00:00").getTime();
+
+                function updateCountdown(){
+
+                    const now = new Date().getTime();
+
+                    const distance = countdownDate - now;
+
+                    if(distance <= 0){
+
+                        document.getElementById("days").innerHTML = "00";
+                        document.getElementById("hours").innerHTML = "00";
+                        document.getElementById("minutes").innerHTML = "00";
+                        document.getElementById("seconds").innerHTML = "00";
+
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+                    const hours = Math.floor(
+                        (distance % (1000 * 60 * 60 * 24))
+                        / (1000 * 60 * 60)
+                    );
+
+                    const minutes = Math.floor(
+                        (distance % (1000 * 60 * 60))
+                        / (1000 * 60)
+                    );
+
+                    const seconds = Math.floor(
+                        (distance % (1000 * 60))
+                        / 1000
+                    );
+
+                    document.getElementById("days").innerHTML =
+                        String(days).padStart(2,"0");
+
+                    document.getElementById("hours").innerHTML =
+                        String(hours).padStart(2,"0");
+
+                    document.getElementById("minutes").innerHTML =
+                        String(minutes).padStart(2,"0");
+
+                    document.getElementById("seconds").innerHTML =
+                        String(seconds).padStart(2,"0");
+                }
+
+                updateCountdown();
+
+                setInterval(updateCountdown,1000);
+
+                </script>
+
+
+
+
+
+
+        <!-- HERO -->
+
+        <div class="hero reveal">
+
+            <div class="temporada">
+                TEMPORADA 2
+            </div>
+
+            <div class="sesion">
+                SESIÓN 01
+            </div>
+
+            <div class="banda">
+                VISIS
+            </div>
+
+            <div class="subtitulo">
+                Sesión en vivo grabada en MonteRanco <br> Futrono · Chile
+            </div>
+
+        </div>
+
+
+
+        <!-- VIDEO -->
+
+
+
+
+<style>
+    /* -------------------------------- */
+/* COMING SOON */
+/* -------------------------------- */
+
+.video-coming{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.75),
+            rgba(0,0,0,.95)
+        ),
+        url("img/bg-session.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+.coming-logo{
+
+    width:220px;
+
+    max-width:70%;
+
+    margin-bottom:30px;
+
+    opacity:.95;
+}
+
+.coming-label{
+
+    color:#888;
+
+    letter-spacing:6px;
+
+    text-transform:uppercase;
+
+    font-size:.8rem;
+
+    margin-bottom:12px;
+}
+
+.coming-date{
+
+    font-size:clamp(2rem,5vw,4rem);
+
+    font-weight:900;
+
+    margin-bottom:10px;
+}
+
+.coming-hour{
+
+    color:#aaa;
+
+    margin-bottom:35px;
+
+    letter-spacing:2px;
+}
+
+.progress-container{
+
+    width:100%;
+
+    max-width:500px;
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#111;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    border:1px solid #222;
+}
+
+.progress-fill{
+
+    width:0;
+
+    height:100%;
+
+    background:#fff;
+
+    transition:1s ease;
+}
+
+.progress-text{
+
+    margin-top:12px;
+
+    color:#888;
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+}
+
+@media(max-width:768px){
+
+    .coming-logo{
+
+        width:160px;
+    }
+
+    .coming-hour{
+
+        font-size:.85rem;
+    }
+
+    .progress-container{
+
+        max-width:300px;
+    }
+}
+</style>
+<!--
+<div class="video-container reveal" id="player">
+    <div class="video-coming">
+
+        <img
+            src="img/logo-monteranco-sesiones.svg"
+            alt="Sesiones Monteranco"
+            class="coming-logo">
+
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="progress-text">
+                <span id="progressPercent">0%</span>
+                completado
+            </div>
+
+        </div>
+
+    </div>-->
+
+
+
+        <div class="video-container">
+
+            <iframe
+                id="player"
+                src="https://www.youtube.com/embed/ZVkuEzWHHnE?si=MXVt9GBLxraysfax"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+
+</div>
+<script>
+
+const releaseDate = new Date("2026-06-15 21:00:00").getTime();
+
+/*
+Fecha en que comenzó la campaña
+Modifica esta fecha cuando publiques la landing
+*/
+
+const campaignStart = new Date("2026-06-01 00:00:00").getTime();
+
+function updateProgress(){
+
+    const now = Date.now();
+
+    const total = releaseDate - campaignStart;
+
+    const elapsed = now - campaignStart;
+
+    let percent = (elapsed / total) * 100;
+
+    percent = Math.max(0, Math.min(100, percent));
+
+    document.getElementById("progressFill").style.width =
+        percent + "%";
+
+    document.getElementById("progressPercent").innerHTML =
+        Math.round(percent) + "%";
+}
+
+updateProgress();
+
+</script>
+
+
+
+
+
+
+
+
+
+    <script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+
+    reveals.forEach(el => {
+
+        const top = el.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 120){
+            el.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    /* ===================================== */
+/* HISTORIA */
+/* ===================================== */
+
+.band-info{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    text-align:center;
+}
+
+.section-label{
+
+    color:#777;
+
+    font-size:.8rem;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+}
+
+.band-title{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    font-weight:900;
+
+    margin-bottom:35px;
+
+    letter-spacing:2px;
+}
+
+.band-history{
+
+    max-width:800px;
+
+    margin:auto;
+}
+
+.band-history p{
+
+    color:#d0d0d0;
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+    margin-bottom:20px;
+}
+
+/* ===================================== */
+/* INTEGRANTES */
+/* ===================================== */
+
+.members{
+
+    margin:70px auto;
+
+    max-width:1000px;
+}
+
+.members-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:35px;
+}
+
+.member{
+
+    border:1px solid #1f1f1f;
+
+background: rgba(1, 1, 1, 0.5);
+    padding:35px 20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.member:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#444;
+}
+
+.member h3{
+
+    font-size:1rem;
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+}
+
+.member span{
+
+    color:#888;
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+}
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media(max-width:768px){
+
+    .members-grid{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+    }
+
+    .member{
+
+        padding:25px 20px;
+    }
+
+    .band-history p{
+
+        font-size:.95rem;
+
+        line-height:1.8;
+    }
+}
+</style>
+
+<section class="section " id="visis">
+            <img src="img/logo-visis.svg"
+                alt="VISIS"
+                class="logo-banda reveal">
+
+
+                <!-- ===================================== -->
+                <!-- VISIS - HISTORIA -->
+                <!-- ===================================== -->
+
+                <section class="band-info reveal">
+
+                    <div class="section-label">
+                        SOBRE LA BANDA
+                    </div>
+
+
+
+                    <div class="band-history">
+
+                        <p>
+                            Formados inicialmente como cuarteto (2016-2019), VISIS nace en la ciudad de Valdivia,
+                            insertándose rápidamente en el circuito rockero local, mostrando un rock denso y melódico a la vez.
+                        </p>
+
+                        <p>
+                            Luego de un prolongado receso, retornan el 2023 como trío, en el cual el sonido y ataque claramente
+                            ha aumentado, siempre manteniendo una atmósfera densa y melódica, con riffs oscuramente potentes y
+                            percusiones enérgicamente duras.
+                        </p>
+
+                        <p>
+                            Las influencias musicales van desde los clásicos de fines de los 70 hasta variadas bandas de los 90's
+                            como Tool, Alice in Chains, Stone Temple Pilots, entre muchas otras.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ===================================== -->
+                <!-- INTEGRANTES -->
+                <!-- ===================================== -->
+
+                <section class="members reveal">
+
+                    <div class="section-label">
+                        INTEGRANTES
+                    </div>
+
+                    <div class="members-grid">
+
+                        <div class="member">
+                            <h3>Christian Flores</h3>
+                            <span>Guitarra y Voz</span>
+                        </div>
+
+                        <div class="member">
+                            <h3>Nilton Delgado</h3>
+                            <span>Bajo</span>
+                        </div>
+
+                        <div class="member">
+                            <h3>Rudy Matus</h3>
+                            <span>Batería y Coros</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+            <p class="social-title reveal">
+                Sigue las redes de VISIS
+            </p>
+
+            <div class="social reveal">
+
+                <a href="https://www.instagram.com/visischile/"
+                    target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/visischile/"
+                    target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://open.spotify.com/artist/0TGb2qqZrjKAz8vXI56uz2"
+                    target="_blank">
+                    <i class="fa fa-spotify"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+
+
+
+
+        <!-- CULTURA -->
+<div class="reveal">
+        <img src="img/logo-cultura.svg"
+            alt="Gobierno de Chile"
+            class="logo-gobierno ">
+        </div>
+
+        <hr>
+
+
+
+        <style>
+            /* ===================================== */
+        /* EQUIPO MONTERANCO */
+        /* ===================================== */
+
+        .team-section{
+
+            max-width:1100px;
+
+            margin:90px auto;
+
+            text-align:center;
+        }
+
+        .team-logo{
+
+            width:220px;
+
+            max-width:80%;
+
+            margin-bottom:25px;
+
+            opacity:.95;
+        }
+
+        .team-title{
+
+            font-size:clamp(2rem,5vw,3.5rem);
+
+            font-weight:900;
+
+            margin-bottom:35px;
+
+            letter-spacing:2px;
+        }
+
+        .team-description{
+
+            max-width:850px;
+
+            margin:auto auto 50px;
+
+            padding: 41px;
+        }
+
+        .team-description p{
+
+            color:#d0d0d0;
+
+            line-height:1.9;
+
+            margin-bottom:20px;
+
+            font-size:1rem;
+
+
+        }
+
+        .team-grid {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-bottom: 50px;
+        }
+
+
+        .team-card {
+
+            width: 100%;
+
+            max-width: 320px;
+
+            flex: 0 1 320px;
+        }
+
+
+        .team-card{
+
+background: rgba(1, 1, 1, 0.5);
+
+            border:1px solid #1f1f1f;
+
+            border-radius:18px;
+
+            padding:28px 22px;
+
+            transition:.3s ease;
+        }
+
+        .team-card:hover{
+
+            transform:translateY(-5px);
+
+            border-color:#444;
+        }
+
+        .team-card h3{
+
+            color:#fff;
+
+            font-size:1rem;
+
+            margin-bottom:10px;
+
+            font-weight:700;
+        }
+
+        .team-card span{
+
+            color:#8a8a8a;
+
+            line-height:1.6;
+
+            font-size:.9rem;
+
+            display:block;
+        }
+
+        .team-footer-text{
+
+            max-width:850px;
+
+            margin:auto;
+
+            color:#cfcfcf;
+
+            line-height:1.9;
+
+            font-size:1rem;
+
+            border-top:1px solid #1a1a1a;
+
+            padding-top:40px;
+            padding: 41px;
+        }
+
+        /* ===================================== */
+        /* TABLET */
+        /* ===================================== */
+
+        @media(max-width:900px){
+
+            .team-grid{
+
+                grid-template-columns:repeat(2,1fr);
+            }
+        }
+
+        /* ===================================== */
+        /* MOBILE */
+        /* ===================================== */
+
+        @media(max-width:768px){
+
+            .team-description p,
+            .team-footer-text{
+
+                font-size:.95rem;
+
+                line-height:1.8;
+            }
+
+            .team-grid{
+
+                grid-template-columns:1fr;
+
+                gap:15px;
+            }
+
+            .team-card{
+
+                padding:22px 18px;
+            }
+
+            .team-logo{
+
+                width:180px;
+            }
+        }
+        </style>
+        <!-- ===================================== -->
+        <!-- EQUIPO MONTERANCO -->
+        <!-- ===================================== -->
+
+        <section class="team-section">
+<div class="reveal">
+
+            <img src="img/logo-monteranco-sesiones.svg"
+                alt="Sesiones Monteranco"
+                class="team-logo ">
+
+</div>
+            <div class="section-label reveal">
+                TEMPORADA 2
+            </div>
+
+
+            <div class="team-description reveal">
+
+                <p>
+                    La música del sur vuelve a tomar protagonismo.
+                    Después de meses de grabaciones, producción y trabajo colaborativo,
+                    estamos felices de anunciar el estreno de la segunda temporada de
+                    Sesiones Monteranco, una serie audiovisual creada para registrar,
+                    difundir y proyectar las nuevas escenas musicales de la Región de Los Ríos.
+                </p>
+
+                <p>
+                    Durante este segundo semestre recorreremos las historias, sonidos y
+                    procesos creativos de siete bandas y proyectos musicales de la región,
+                    a través de capítulos que combinan música en vivo, conversación y
+                    registro audiovisual de alta calidad.
+                </p>
+
+                <p>
+                    Esta temporada es posible gracias al trabajo de un equipo comprometido
+                    con la creación y difusión musical desde el sur del mundo.
+                </p>
+
+            </div>
+
+            <div class="section-label reveal">
+                Equipo Monteranco
+            </div>
+
+            <div class="team-grid reveal">
+
+                <div class="team-card">
+                    <h3>Máximo Torres</h3>
+                    <span>Dirección · Producción Ejecutiva · Sonido</span>
+                </div>
+
+                <div class="team-card">
+                    <h3>Dannae Arias</h3>
+                    <span>Conducción</span>
+                </div>
+
+                <div class="team-card">
+                    <h3>Daniela Casal</h3>
+                    <span>Comunicaciones · Difusión</span>
+                </div>
+
+                <div class="team-card">
+                    <h3>Paul Pineda</h3>
+                    <span>Diseño · Cámara · Edición · Web</span>
+                </div>
+
+                <div class="team-card">
+                    <h3>Marcos Sobarzo</h3>
+                    <span>Cámara · Edición · Fotografía · Iluminación</span>
+                </div>
+
+            </div>
+
+
+            <div class="section-label reveal ">
+                Agradecimientos
+            </div>
+
+            <div class="team-grid reveal">
+
+                <div class="team-card">
+                    <h3>Francisca Ortega</h3>
+                    <span>Cámara · Iluminación</span>
+                </div>
+
+
+            </div>
+
+            <div class="team-footer-text reveal">
+
+                Desde Futrono, en el corazón de la Provincia del Ranco,
+                Estudio MonteRanco vuelve a convertirse en un punto de encuentro
+                para artistas, audiencias y nuevas miradas musicales, poniendo la
+                tecnología, el registro profesional y la creación audiovisual al
+                servicio de la música hecha en el territorio.
+
+            </div>
+
+        </section>
+
+
+
+        <!-- MONTERANCO -->
+
+        <section class="section ">
+
+            <img src="img/logo-monteranco.svg"
+                alt="MonteRanco"
+                class="logo-estudio reveal">
+
+
+            <div class="services reveal">
+                <p>Grabación</p>
+                <p>Mezcla</p>
+                <p>Mastering</p>
+            </div>
+
+            <p class="social-title reveal">
+                Sigue nuestras redes
+            </p>
+
+            <div class="social reveal">
+
+                <a href="https://www.youtube.com/@monterancosesiones2716/videos"
+                    target="_blank">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+
+                <a href="https://www.instagram.com/monteranco_"
+                    target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/monteranco"
+                    target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://open.spotify.com/show/5YawREk2jIHfMY0jtlgysS"
+                    target="_blank">
+                    <i class="fa fa-spotify"></i>
+                </a>
+
+            </div>
+
+
+
+
+            <style>
+            /* ===================================== */
+            /* CONTACTO */
+            /* ===================================== */
+
+            .contact-box{
+
+            margin-top:45px;
+
+            text-align:center;
+            }
+
+            .contact-label{
+
+            color:#777;
+
+            font-size:.8rem;
+
+            letter-spacing:4px;
+
+            text-transform:uppercase;
+
+            margin-bottom:15px;
+            }
+
+            .contact-mail{
+
+            color:#fff;
+
+            text-decoration:none;
+
+            font-size:1.15rem;
+
+            font-weight:600;
+
+            letter-spacing:1px;
+
+            transition:.3s ease;
+            }
+
+            .contact-mail:hover{
+
+            color:#bdbdbd;
+            }
+
+            @media(max-width:768px){
+
+            .contact-mail{
+
+            font-size:1rem;
+            }
+            }
+            </style>
+
+            <div class="contact-box reveal">
+
+                <div class="contact-label">
+                    CONTACTO
+                </div>
+
+                <a href="mailto:monteranco@gmail.com" class="contact-mail">
+                    monteranco@gmail.com
+                </a>
+
+            </div>
+
+        </section>
+
+<footer id="footer">
+
+
+
+
+<style>
+.logo-skeleton {
+width: 22px;
+height: 25px;
+margin-right: 6px;
+}
+</style>
+
+
+        <img src="img/logo-skeleton.svg"
+            alt="Skeleton"
+            class="logo-skeleton ">
+
+
+            Hecho por
+            <a href="https://skeleton.cl" target="_blank">
+                skeleton.cl
+            </a>
+        </footer>
+
+    </div>
+
+
+
+
+
+    <style>
+/* ================================= */
+/* GO TO PLAYER */
+/* ================================= */
+
+#go-player{
+
+    position:fixed;
+
+    right:30px;
+    bottom:30px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:999px;
+
+    background:rgba(15,15,15,.95);
+
+    border:1px solid #333;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:99999;
+
+    backdrop-filter:blur(12px);
+
+    transition:.3s ease;
+
+    box-shadow:
+        0 0 25px rgba(0,0,0,.45);
+}
+
+#go-player:hover{
+
+    transform:translateY(-4px);
+
+    border-color:#777;
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,.12);
+}
+
+#go-player i{
+
+    color:#fff;
+
+    font-size:26px;
+}
+
+@media(max-width:768px){
+
+    #go-player{
+
+        right:20px;
+        bottom:20px;
+
+        width:58px;
+        height:58px;
+    }
+}
+    </style>
+<div id="go-player">
+    <i class="fa fa-play"></i>
+</div>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button = document.getElementById("go-player");
+    const player = document.getElementById("player");
+
+    button.addEventListener("click", () => {
+
+        const offset = 100;
+
+        const y =
+            player.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
+
+        window.scrollTo({
+            top: y,
+            behavior: "smooth"
+        });
+
+    });
+
+});
+
+</script>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const reveals =
+        document.querySelectorAll(".reveal");
+
+    const observer =
+        new IntersectionObserver(
+
+        (entries) => {
+
+            const visibles = entries
+                .filter(entry => entry.isIntersecting);
+
+            visibles.forEach((entry,index) => {
+
+                setTimeout(() => {
+
+                    entry.target.classList.add("show");
+
+                }, index * 120);
+
+                observer.unobserve(entry.target);
+
+            });
+
+        },
+
+        {
+            threshold:0.1,
+            rootMargin:"0px 0px -10% 0px"
+        }
+
+    );
+
+    reveals.forEach(el => {
+
+        observer.observe(el);
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
